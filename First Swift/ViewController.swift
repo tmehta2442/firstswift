@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnButtonACTION(sender: UIButton) {
+        lblLabel.text = "TJ RULES"
     }
 
 }
