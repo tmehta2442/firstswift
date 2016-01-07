@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var intNumber : Int = 0
+    var doubleDecimals : Double = 0.23
+    var doubleFloat : Float = -233.3
+    var stringName : String = "Tejas Mehta"
+    var isBoolean : Bool = false
+    
+    @IBOutlet weak var txtNumber: UITextField!
     @IBOutlet weak var lblLabel: UILabel!
     @IBOutlet weak var btnButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeTextAtStart()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,18 +31,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnButtonACTION(sender: UIButton) {
+        
+        intNumber = Int(txtNumber.text!)!
         changeText()
     }
     
     func changeText(){
-        lblLabel.text = "TJ RULES"
-        btnButton.setTitle("TJ Status", forState: UIControlState.Normal)
+        lblLabel.text = "\(intNumber)"
+        btnButton.setTitle("\(intNumber)", forState: UIControlState.Normal)
     }
-    
-    func changeTextAtStart(){
-        lblLabel.text = "TJ Stat?"
-        btnButton.setTitle("Click ME", forState: UIControlState.Normal)
-    }
+
     
 }
 
