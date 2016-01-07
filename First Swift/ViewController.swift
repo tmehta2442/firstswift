@@ -11,11 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var lblLabel: UILabel!
-    @IBOutlet weak var btbButton: UIButton!
+    @IBOutlet weak var btnButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        changeTextAtStart()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,8 +25,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnButtonACTION(sender: UIButton) {
-        lblLabel.text = "TJ RULES"
+        changeText()
     }
-
+    
+    func changeText(){
+        lblLabel.text = "TJ RULES"
+        btnButton.setTitle("TJ Status", forState: UIControlState.Normal)
+    }
+    
+    func changeTextAtStart(){
+        lblLabel.text = "TJ Stat?"
+        btnButton.setTitle("Click ME", forState: UIControlState.Normal)
+    }
+    
 }
 

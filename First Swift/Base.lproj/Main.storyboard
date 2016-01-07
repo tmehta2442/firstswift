@@ -41,7 +41,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="btbButton" destination="4mV-Yp-Oi3" id="1jx-Ei-Kuw"/>
+                        <outlet property="btnButton" destination="4mV-Yp-Oi3" id="3sZ-aH-Uuu"/>
                         <outlet property="lblLabel" destination="Uyg-rQ-hAR" id="Mw6-0X-oSX"/>
                     </connections>
                 </viewController>
